@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Login from "./markup/pages/LoginPage/LoginPage";
+import Install from './util/install';
+import Authenticator from "./Routes/Authenticator";
+import Unauthorized from "./markup/pages/401";
+import NotFound from "./markup/pages/404";
+
+const install = import.meta.env.VITE_REACT_INSTALL;
+const checking = import.meta.env.VITE_REACT_CHECKING;
+const reseting = import.meta.env.VITE_REACT_RESET;
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <Routes>
+        <Route path={install} element={<Install />} />
+        <Route path="/login" element={<Login reset={false} />} />
+        <Route path="/401" element={<Unauthorized />} />
+        <Route path="/404" element={<NotFound />} />
+        <Route path={reseting} element={<Login reset={true} confirm={false} />} />
+        <Route path={checking} element={<Login reset={false} confirm={true} />} />
+        <Route path="*" element={<Authenticator />} />
+
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;
