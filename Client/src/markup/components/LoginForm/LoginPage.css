@@ -1,0 +1,9 @@
+.login-page {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url("../../../assets/images/LoginBackground.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
