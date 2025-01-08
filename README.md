@@ -1,4 +1,4 @@
-<img src="./Frontend/src//assets//images/FinancialLogo.png" alt="Alt text" width="80" style="vertical-align: middle; margin-right: 10px;" />
+<img src="./Client/src//assets//images/FinancialLogo.png" alt="Alt text" width="80" style="vertical-align: middle; margin-right: 10px;" />
 
 # Personal Financial Loan Website
 
