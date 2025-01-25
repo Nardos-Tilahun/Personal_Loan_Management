@@ -51,13 +51,13 @@ To install the Personal Financial Loan Website locally, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/Nardos-Tilahun/Lending_Project.git
+   git clone https://github.com/Nardos-Tilahun/Personal_Loan_Management.git
    ```
 
 2. Navigate into the project directory:
 
    ```
-   cd Lending_Project
+   cd Personal_Loan_Management
    ```
 
 ### Frontend Installation
@@ -69,7 +69,7 @@ To install the frontend of the Personal Financial Loan Website, follow these ste
 2. Navigate to the frontend directory:
 
    ```
-   cd Frontend
+   cd Client
    ```
 
 3. Install frontend dependencies:
@@ -93,7 +93,7 @@ To install the backend of the Personal Financial Loan Website, follow these step
 2. Navigate to the backend directory:
 
    ```
-   cd Backend
+   cd Server
    ```
 
 3. Install backend dependencies:
