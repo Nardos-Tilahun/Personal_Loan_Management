@@ -51,7 +51,7 @@ To install the Personal Financial Loan Website locally, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/Nardos-Tilahun/Lending_Project.git
+   git clone https://github.com/Nardos-Tilahun/Personal_Loan_Management.git
    ```
 
 2. Navigate into the project directory:
