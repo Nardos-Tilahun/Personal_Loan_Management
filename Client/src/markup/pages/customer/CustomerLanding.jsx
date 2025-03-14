@@ -64,10 +64,7 @@ function CustomerLanding() {
 
     return (
         <div >
-            <div className=" hidden md:block h-auto md:h-72 w-1/2 bg-center bg-cover mt-[-100px] ml-[30%]  transition-opacity duration-500 hover:opacity-75" style={{
-                backgroundImage: `url(${bannerImg})`,
-                boxShadow: "0px 0px 10px rgba(0, 200, 0, 0.1)"
-            }}>
+            <div className=" hidden md:block h-auto md:h-72 w-1/2 bg-center bg-cover mt-[-100px] ml-[30%]  transition-opacity duration-500 hover:opacity-75" >
             </div>
 
             <div className=" mt-[-100px] md:mt-[-180px]">

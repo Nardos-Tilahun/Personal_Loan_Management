@@ -77,19 +77,14 @@ function Admins() {
     return (
         <div className="2xl:max-w-full 2xl:flex 2xl:justify-center">
             <div>
-                <div className=" hidden md:block h-auto sm:h-72 w-full md:w-1/2 bg-center bg-cover mt-[-100px] lg:ml-[30%] max-w-[620px] transition-opacity duration-500" style={{
-                    backgroundImage: `url(${bannerImg})`,
-                    boxShadow: "0px 0px 10px rgba(0, 200, 0, 0.1)"
-                }}>
-
-                </div>
-                <div className="mt-48 md:mt-0 lg:mt-[-50px]">
-                    <div className="w-[400px]  relative flex justify-around text-4xl mx-7 font-semibold">
-                        <div >Admin</div>
+               
+                <div className="mt-40 2xl:mt-16 ">
+                    <div className="w-[400px] lg:w-[1000px] 2xl:w-[1200px] max-w-full  relative flex justify-between text-4xl  font-semibold">
+                        <div className="xs:ml-16 lg:ml-32" >Admin</div>
                         <div className="mt-[-5px]">
                             <button
                                 onClick={handleAddUserClick}
-                                className="bg-green__ text-white  text-sm md:text-base font-semibold py-2 px-6 md:px-6 rounded-lg hover:outline-none hover:ring-2 hover:ring-green-500 hover:ring-opacity-50 transition duration-300 ease-in-out hover:bg-green-200 hover:text-black_"
+                                className="bg-green__ text-white  text-sm md:text-base font-semibold py-2 px-6 md:px-6 rounded-lg hover:outline-none hover:ring-2 hover:ring-green-500 hover:ring-opacity-50 transition duration-300 ease-in-out hover:bg-green-200 hover:text-black_ lg:mr-16"
                             >
                                 Add Admin
                             </button>

@@ -181,12 +181,6 @@ function Customer() {
         <div>
             <div className="2xl:max-w-full 2xl:flex 2xl:justify-center">
                 <div >
-                    <div className=" hidden md:block h-auto md:h-72 w-1/2 bg-center bg-cover mt-[-100px] ml-[30%]  transition-opacity duration-500 " style={{
-                        backgroundImage: `url(${bannerImg})`,
-                        boxShadow: "0px 0px 10px rgba(0, 200, 0, 0.1)"
-                    }}>
-                    </div>
-
                     <div className=" mt-[-100px] md:mt-[-180px]">
                         <div className="w-[100%] flex flex-col md:justify-content md:flex-col overflow-auto">
 

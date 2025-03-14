@@ -612,7 +612,6 @@ const CustomerLoan = ({ loans, onDeleteCustomers }) => {
 
                                                     <span className="relative flex-shrink-0 w-6 h-6 border border-gray-300 rounded-full cursor-pointer">
                                                         <span className="absolute inset-0 flex items-center justify-center rounded-full bg-white">
-                                                            {/* <span className={`block w-4 h-4 rounded-full ${selectedLoanIds.includes(loan.LoanHashID) ? 'bg-green_' : 'bg-transparent'}`}></span> */}
                                                             <span className={`block w-4 h-4 rounded-full 
                                                             ${selectedLoanIds?.some(item => item.LoanHashID === loan.LoanHashID)
                                                                     ? 'bg-green_'
@@ -657,11 +656,6 @@ const CustomerLoan = ({ loans, onDeleteCustomers }) => {
                                                     onMouseLeave={loan.status !== "Pending" ? hidePopup : null}>
                                                     {loan.status !== "Pending" ? <BlockIcon fontSize="small" className="hover:text-red-300" /> : <EditIcon fontSize="small" />}
                                                 </button>
-                                                {/* <button
-                                                    className="text-gray-400 hover:text-gray-600 focus:outline-none border border-gray-300 rounded px-1 md:mr-1 md:px-2"
-                                                    onClick={() => editLoan(loan.LoanHashID)}>
-                                                    <EditIcon fontSize="small" />
-                                                </button> */}
                                             </td>}
                                             <td className=" px-2 py-2 text-center">
                                                 <button

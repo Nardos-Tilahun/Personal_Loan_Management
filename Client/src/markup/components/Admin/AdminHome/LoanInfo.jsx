@@ -37,7 +37,7 @@ function LoanInfo({ data, isPayment }) {
 
 
     return (
-        <div className={`w-[90%] left-0 md:w-[1150px] lg:[95%] lg:px-8 lg:mx-8 lg:ml-6  bg-white rounded-3xl shadow-lg min-h-64 pb-2 ${isPayment ? 'mb-12' : 'mt-64 sm:mt-44 md:mt-16'}`}>
+        <div className="w-[90%] md:w-[1000px]  left-0 mt-48 sm:mt-44 md:mt-16  lg:px-8 lg:mx-8 lg:ml-6  bg-white rounded-3xl shadow-lg min-h-64 pb-2">
             <div className={`title flex justify-between border-b-2 font-semibold py-2 ${isPayment ? "text-l" : "text-xl"}`}>
                 <div>{`${isPayment ? "Loan Information Associated With This Payment" : "Loan Information"}`}</div>
                 {user.userRoleId === 2 ? <button className="ml-24 sm:ml-48 md:ml-64 lg:ml-80 mt-10 text-sm flex items-center bg-green__ pr-4 pl-2 text-white py-1 rounded-md outline-none hover:bg-green-200 hover:text-black_" onClick={handleBack}> <ArrowBackIcon />Back </button> : null}

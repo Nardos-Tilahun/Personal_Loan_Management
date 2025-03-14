@@ -74,21 +74,14 @@ function Loan() {
     return (
         <div className="2xl:max-w-full 2xl:flex 2xl:justify-center">
             <div>
-                <div className="hidden md:block h-auto md:h-72 w-1/2 bg-center bg-cover mt-[-100px] ml-[30%]  transition-opacity duration-500 " style={{
-                    backgroundImage: `url(${bannerImg})`,
-                    boxShadow: "0px 0px 10px rgba(0, 200, 0, 0.1)"
-                }}>
-
-                </div>
-
-                <div className=" mt-[-100px] md:mt-[-180px]">
-                    <div className="lg:w-full overflow-auto relative ">
+                <div className="mt-[10px] xs:mt-[20px] md:mt-[170px] 2xl:mt-[50px]">
+                    <div className="lg:w-full  relative ">
                         <LoanInfo data={dataInfo?.loanList?.[0]} />
                     </div>
                 </div>
-                <div >
+                <div>
                     <div className="w-[100%] flex flex-col md:justify-content md:flex-col overflow-auto">
-                        <div className="flex-grew w-full mt-8">
+                        <div className="flex-grew w-full md:w-[1200px] mt-8">
                             {(dataInfo?.allPaymentInfo) ?
                                 <CustomerPayment payments={dataInfo?.allPaymentInfo} onDeletePayments={handleDeletePayments} /> : <div className="text-red-300 italic  text-xl font-semibold px-12"> Notice: -  So far, there is No Payment Related to this Loan</div>}
                         </div>

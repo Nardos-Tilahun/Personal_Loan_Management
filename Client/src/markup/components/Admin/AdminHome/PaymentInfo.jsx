@@ -24,7 +24,7 @@ function PaymentInfo({ data }) {
     }
 
     return (
-        <div className="w-[90%] md:w-[1000px]  left-0 mt-64 sm:mt-44 md:mt-16  lg:px-8 lg:mx-8 lg:ml-6  bg-white rounded-3xl shadow-lg min-h-64 pb-2 ">
+        <div className="w-[90%] md:w-[1000px]  left-0 mt-48 sm:mt-44 md:mt-16  lg:px-8 lg:mx-8 lg:ml-6  bg-white rounded-3xl shadow-lg min-h-64 pb-2 ">
             <div className="flex justify-between">
                 <div className="title text-xl border-b-2 font-semibold py-2">Term {term} - Payment Information</div>
 
