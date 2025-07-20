@@ -14,7 +14,9 @@ const { register, loginUser,
     = require("../Controller/userController");
 
 const { dashboardData } = require("../Controller/dashboardController");
-
+router.get("/ping", (req, res) => {
+    res.status(200).json({ message: "Server is alive", timestamp: new Date() });
+});
 router.post(process.env.REGISTER, upload.single('profilePicture'), authMiddleware, register);
 router.get(process.env.GETUSERDATAFORUPDATE, authMiddleware, getUserDataForUpdate);
 router.put(process.env.GETUSERDATAFORUPDATE, upload.single('profilePicture'), authMiddleware, update);
